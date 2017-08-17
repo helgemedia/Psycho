@@ -1,67 +1,112 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">    
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Psychotherapie Tekath</title>
-  
+
   <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">    
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/http_code.jquery.com_jquery-latest.js"></script>
 
 </head>
 
 <body>
+  <script src="../js/index.js"></script>
   <div id="mainPage" style="text-align: center">
-      <div style="text-align: right">
-  <a href="#" class="menu-btn" onclick="toggleMenu();" ><img src="../img/list-menu.svg" alt="Menü" /></a></div>
-  <header>
-    <img src="../img/logo.svg" alt="Logo Psychotherapie Tekath" />
-  </header>
-  <nav id="mainNav" class="closed" role='navigation'>
-  <ul>
-    <li><a href="../index.html"> Home</a></li>
-    <li><a href=#> Therapeutin</a>
-      <ul class="sub-menu">
-        <li><a href="therapeutin.html"> Therapeutin</a></li>
-        <li><a href="leitwerte.html"> Leitwerte</a></li>
-        <li><a href="co.html"> Co-Therapeut</a></li>
+    <div style="text-align: right">
+      <a href="#" class="menu-btn" onclick="toggleMenu();"><img src="../img/list-menu.svg" alt="Menü" /></a></div>
+    <header>
+      <img src="../img/logo.svg" alt="Logo Psychotherapie Tekath" />
+    </header>
+    <nav id="mainNav" class="closed" role="navigation">
+      <ul>
+        <li><a href="../index.html"> Home</a></li>
+        <li><a href="#"> Therapeutin</a>
+          <ul class="sub-menu">
+            <li><a href="therapeutin.html"> Therapeutin</a></li>
+            <li><a href="leitwerte.html"> Leitwerte</a></li>
+            <li><a href="co.html"> Co-Therapeut</a></li>
+          </ul>
+        </li>
+        <li><a href="#"> Psychotherapie</a>
+          <ul class="sub-menu">
+            <li><a href="psychotherapie.html"> Psychotherapie</a></li>
+            <li><a href="kosten.html"> Kostenübernahme</a></li>
+          </ul>
+        </li>
+        <li><a href="#"> Beratung</a>
+          <ul class="sub-menu">
+            <li><a href="beratung.html"> Beratung</a></li>
+            <li><a href="coaching.html"> Coaching</a></li>
+            <li><a href="paarberatung.html"> Paarberatung</a></li>
+            <li><a href="honorar.html"> Honorar</a></li>
+          </ul>
+        </li>
+        <li><a href="gruppentherapie.html"> Gruppentherapie</a></li>
+        <li><a href="#"> Kontakt</a>
+          <ul class="sub-menu">
+            <li><a href="kontakt.html"> Kontakt</a></li>
+            <li><a href="impressum.html"> Impressum</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>    
-    <li><a href=#> Psychotherapie</a>
-      <ul class="sub-menu">
-        <li><a href="psychotherapie.html"> Psychotherapie</a></li>
-        <li><a href="kosten.html"> Kostenübernahme</a></li>
-      </ul>
-    </li>
-    <li><a href=#> Beratung</a>
-        <ul class="sub-menu">
-        <li><a href="beratung.html"> Beratung</a></li>
-        <li><a href="coaching.html"> Coaching</a></li>
-        <li><a href="paarberatung.html"> Paarberatung</a></li>
-        <li><a href="honorar.html"> Honorar</a></li>
-      </ul>
-    </li>
-    <li><a href="gruppentherapie.html"> Gruppentherapie</a></li>
-    <li><a href=#> Kontakt</a>
-        <ul class="sub-menu">
-        <li><a href="kontakt.html"> Kontakt</a></li>
-        <li><a href="impressum.html"> Impressum</a></li>
-      </ul>
-    </li>  
-  </ul>
-  <a id="close" onclick="toggleMenu();">X</a>
-</nav>
-  <div class="contentdiv">
+      <a id="close" onclick="toggleMenu();">X</a>
+    </nav>
+    <div class="contentdiv">
+      <div class="contentbox">
+        <div class="contactdata divinner" id="contactd">
+          <h2>Kontakt</h2>
+          <p>
+            Man könnte sich hier melden.<br><br>
+          </p>
+          Stefanie Tekath<br> x straße<br> x stadt<br>
+          <br> E-Mail:
+          <script type="text/javascript">
+            document.write('<a href="mailto:' + first + '@' + last + '">' + first + '@' + last + '<\/a>');
+          </script>
+          <noscript>
+                  Bitte Javascript aktivieren!.
+              </noscript>
+          <br> Tel: hier steht eine nr.
+        </div>
+        <div class="contactformular divinner" id="contactf">
+          <script type="text/javascript" src="../js/ajaxform.js"></script>
+          <form method="post" action="../php/submit.php" class="ajaxform">
 
-      <h2><strong>Ruf mich an!</strong></h2>
+            <p><label for="name">Name:</label>
+              <br/><input name="name" class="inputs shorti" id="name" placeholder="Name" /></p>
 
-</div>
- 
-</div>
-  
-    <script src="../js/index.js"></script>
+            <p><label for="email">E-Mail:</label>
+              <br/><input name="email" class="inputs shorti" id="email" placeholder="E-Mail" /></p>
+
+            <p class="antispam"><label for="antispam">Lass das hier leer! (Anti-Spam):</label>
+              <br/><input name="url" class="inputs shorti" id="antispam" placeholder="Lass das hier leer! (Antispam)" /></p>
+
+            <p><label for="message">Nachricht:</label>
+              <br/><textarea name="message" rows="10" cols="50" class="inputs" id="message" placeholder="Ihre Nachricht..."></textarea></p>
+
+            <p><input type="submit" value="Abschicken" id="sendbutton" /></p>
+
+          </form>
+          <div class="fadein" id="popup1">
+            <div class="fadecenter">
+              <p>&#x2713 Danke, ich melde mich!</p>
+            </div>
+          </div>
+          <div class="fadein" id="popup2">
+            <div class="fadecenter">
+              <p>&#x2715 Bitte alles ausfüllen! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>

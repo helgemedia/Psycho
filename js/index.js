@@ -11,3 +11,8 @@ function toggleMenu() {
     open = 0;
   }
 }
+
+//Email Adress Anti-Spam var
+
+var first = "info";
+var last = "psychotherapie-tekath.de";

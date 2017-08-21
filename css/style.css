@@ -13,6 +13,7 @@ img {
 
 .photo {
     max-width: 400px;
+    padding-top: 20px;
 }
 
 html {
@@ -37,6 +38,12 @@ body {
  
 }
 
+.upper-background{   
+    background: url(../img/background/Sonne_hl.png) no-repeat left top,
+      url(../img/background/Sonne_hr.png) no-repeat right 90px;
+    background-color: #F4FAFE;
+}
+
 
 h1 {
      text-align: left;
@@ -47,17 +54,17 @@ h1 {
     padding-right: 2%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 960px;
     }
 h2 {
      text-align: left;
-    font-size: 24px;
+    font-size: 26px;
     color: #1C1463;
     padding-left: 2%;
     padding-right: 2%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 960px;
     }
 h3 {
     font-family: Calibri;
@@ -69,7 +76,7 @@ h3 {
     margin-right: auto;
     padding-top: 5px;
     padding-bottom: 5px;
-    max-width: 1000px;
+    max-width: 960px;
     }
 p {
      text-align: left;
@@ -80,7 +87,7 @@ p {
     padding-right: 2%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 960px;
     }
 li{
     color:#1C1463;
@@ -109,19 +116,13 @@ header {
 .listdiv {
     position: relative;
     text-align: left;
-    max-width: 1000px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1em;
     color: #1C1463;
+    font-family: Calibri;
 }
-
-.upper-background{   
-    background: url(../img/background/Sonne_hl.png) no-repeat left top,
-      url(../img/background/Sonne_hr.png) no-repeat right 90px;
-    background-color: #F4FAFE;  
-}
-
-
 
 .contenttext {
     position: relative;
@@ -152,6 +153,10 @@ summary {
     margin-top: 10px;
     margin-bottom: 10px;
     
+}
+
+.signature {
+    max-width: 200px;
 }
 
 @media screen and (min-width: 40em) {
@@ -346,7 +351,7 @@ summary {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  max-width: 1000px;
+  max-width: 960px;
     margin-left: auto;
     margin-right: auto;
   padding: 10px;
@@ -519,12 +524,13 @@ summary {
 iframe {
   width:100%;
   max-width: 600px;
-  height:500px;
+  height:520px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 20px;
 }
 
-#helgewelle {
+#logopos {
     display: inline;
     width: 18px;
 }

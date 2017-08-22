@@ -74,6 +74,8 @@ body {
 
 .logoscale {
     width: auto;
+    max-width: 220px;
+    margin-bottom: .3em;
 }
 
 @media screen and (min-width: 640px) {
@@ -151,11 +153,48 @@ a {
   text-decoration: none;
 }
 
+.upper-background {
+    background-color: #F4FAFE;
+    text-align: right;
+}
+
 header {
   display: inline-block;
-  padding: .5em 0 0 0;
-  width: 70%;
-  margin-bottom: 1em;
+    padding-bottom: .2em;
+  width: 100%;
+    background-color: #F4FAFE;
+}
+
+@media screen and (min-width: 640px) {
+  header {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px;
+    background-size: 15%;
+      background-color: #F4FAFE;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  header {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px;
+    background-size: 12%;
+      background-color: #F4FAFE;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px;
+    background-size: 10%;
+      background-color: #F4FAFE;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  header {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px;
+    background-size: 8%;
+      background-color: #F4FAFE;
+  }
 }
 
 .contentdiv {

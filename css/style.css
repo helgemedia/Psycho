@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -39,18 +40,59 @@ body {
   margin-bottom: 20px;
   min-height: 100%;
   width: 100%;
-
-  background: url(../img/background/Sonne_hl.png) no-repeat left 600px, url(../img/background/Sonne_hr.png) no-repeat right 600px;
+  background: url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.png) no-repeat right 600px;
   background-size: 15%;
 }
 
 @media screen and (min-width: 640px) {
   body {
-    background: url(../img/background/Sonne_hl.png) no-repeat left top, url(../img/background/Sonne_hr.png) no-repeat right 90px, url(../img/background/Sonne_hl.png) no-repeat left 600px, url(../img/background/Sonne_hr.png) no-repeat right 600px;
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
     background-size: 15%;
   }
 }
 
+@media screen and (min-width: 960px) {
+  body {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
+    background-size: 12%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
+    background-size: 10%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
+    background-size: 8%;
+  }
+}
+
+.logoscale {
+    width: auto;
+}
+
+@media screen and (min-width: 640px) {
+  .logoscale {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .logoscale {
+    max-width: 230px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .logoscale {
+    max-width: 250px;
+  }
+}
 
 h1 {
   text-align: left;
@@ -76,7 +118,7 @@ h2 {
 }
 
 h3 {
-  font-family: Calibri;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   text-align: left;
   padding-left: 2%;
@@ -89,10 +131,10 @@ h3 {
 }
 
 p {
+    font-family: 'Roboto', sans-serif;
   text-align: left;
   font-size: 1.2em;
   color: #1C1463;
-  font-family: Calibri;
   padding-left: 2%;
   padding-right: 2%;
   margin-left: auto;
@@ -103,6 +145,10 @@ p {
 li {
   color: #1C1463;
   font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -329,7 +375,7 @@ summary {
     border-right: 0px solid blue;
     border-left: 0px solid blue;
     color: #1C1463;
-    padding: 0.5em;
+    padding: 0.2em;
     padding-left: 1.2em;
     padding-right: 1.2em;
     text-decoration: none;
@@ -360,6 +406,11 @@ summary {
   #mainNav .sub-menu a {
     padding-right: 0.5em;
   }
+}
+
+.menudiv{
+    max-width: 960px;
+    text-align: center;
 }
 
 

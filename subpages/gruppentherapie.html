@@ -1,95 +1,139 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">   
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="author" content="Psychotherapie Tekath">
   <meta name="copyright" content="Psychotherapie Tekath">
   <meta name="description" content="Psychotherapie in Bottrop.">
   <meta name="keywords" content="Psychotherapie, Tekath, Stefanie, Coaching, Gruppentherapie, Paarberatung, Bottrop">
-  <meta name="audience" content="Alle"><meta http-equiv="content-language" content="de">
+  <meta name="audience" content="Alle">
+  <meta http-equiv="content-language" content="de">
   <meta name="robots" content="index, follow">
-    
+
   <title>Psychotherapie Tekath</title>
-    
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">  
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
 
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 
-  ga('create', 'UA-97916202-5', 'auto');
-  ga('send', 'pageview');
-    </script>
-    <script src="../js/index.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-97916202-5', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="../js/index.js"></script>
 
 </head>
 
 <body>
   <div style="text-align: center">
-      <div class="upper-background">
-  <a href="#" class="menu-btn" onclick="openMenu();" ><i class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></i></a></div>
-  <header>
-   <a href="../index.html"> <img class="logoscale" src="../img/logo.svg" alt="Logo Psychotherapie Tekath" /></a>
-  </header>
-  <nav id="mainNav" class="closed" role="navigation">
+    <div class="upper-background">
+      <a href="#" class="menu-btn" onclick="openMenu();"><i class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></i></a></div>
+    <header>
+      <a href="../index.html"> <img class="logoscale" src="../img/logo.svg" alt="Logo Psychotherapie Tekath" /></a>
+    </header>
+    <nav id="mainNav" class="closed" role="navigation">
       <ul>
         <li><a href="../index.html"> Home</a></li>
         <li><a href="therapeutin.html"> Therapeutin</a>
-          
+
         </li>
         <li><a href="psychotherapie.html"> Psychotherapie</a>
-          
+
         </li>
         <li><a href="beratung.html"> Beratung</a>
-          
+
         </li>
         <li><a href="gruppentherapie.html" style="color: #FFFCB0"> Gruppentherapie</a></li>
         <li><a href="kontakt.html"> Kontakt</a>
-          
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="mobileNav" class="closed" role="navigation">
+      <ul>
+        <li><a href="../index.html"> Home</a></li>
+        <li><a href="therapeutin.html"> Therapeutin</a>
+          <ul class="sub-menu">
+            <li><a href="therapeutin.html"> Über mich</a></li>
+            <li><a href="leitwerte.html"> Leitwerte</a></li>
+            <li><a href="co.html"> Co-Therapeut</a></li>
+          </ul>
+        </li>
+        <li><a href="psychotherapie.html"> Psychotherapie</a>
+          <ul class="sub-menu">
+            <li><a href="psychotherapie.html"> Einzelpsychotherapie</a></li>
+            <li><a href="kosten.html"> Kostenübernahme</a></li>
+          </ul>
+        </li>
+        <li><a href="beratung.html"> Beratung</a>
+          <ul class="sub-menu">
+            <li><a href="beratung.html"> Psychologische Beratung</a></li>
+            <li><a href="coaching.html"> Coaching</a></li>
+            <li><a href="paarberatung.html"> Paarberatung</a></li>
+            <li><a href="honorar.html"> Honorar</a></li>
+          </ul>
+        </li>
+        <li><a href="gruppentherapie.html" style="color: #FFFCB0"> Gruppentherapie</a></li>
+        <li><a href="kontakt.html"> Kontaktdaten</a>
+          <ul class="sub-menu">
+            <li><a href="kontakt.html"> Kontakt</a></li>
+            <li><a href="impressum.html"> Impressum</a></li>
+          </ul>
         </li>
       </ul>
       <a id="close" onclick="closeMenu();">X</a>
     </nav>
-      
-  <div class="contentdiv">
-      
+
+    <div class="contentdiv">
+
       <h2><strong>Gruppentherapie</strong></h2>
-      
-      <p>In Abhängigkeit von der Nachfrage biete ich ebenfalls Gruppentherapien an. Dieses Angebot (mit Ausnahme der Informationsabende) richtet sich vor allem an Personen, welche die Wartezeit auf einen Einzelpsychotherapieplatz sinnvoll nutzen, bzw. überbrücken wollen oder einer Einzelpsychotherapie unsicher gegenüber stehen und sich in einer Gruppe zunächst wohler fühlen.
-          <br /><br />
-      Folgende Gruppenangebote sind möglich:</p>
+
+      <p>In Abhängigkeit von der Nachfrage biete ich ebenfalls Gruppentherapien an. Dieses Angebot (mit Ausnahme der Informationsabende) richtet sich vor allem an Personen, welche die Wartezeit auf einen Einzelpsychotherapieplatz sinnvoll nutzen, bzw. überbrücken
+        wollen oder einer Einzelpsychotherapie unsicher gegenüber stehen und sich in einer Gruppe zunächst wohler fühlen.
+        <br /><br /> Folgende Gruppenangebote sind möglich:</p>
       <div class="listdiv">
-      <ul>
+        <ul style="font-family: Roboto">
           <li>Selbstsicherheitstraining / Gruppentraining sozialer Kompetenzen (GSK)</li>
           <li>Stressbewältigungstraining / Training emotionaler Kompetenzen (TEK)</li>
           <li>Gruppe der Depressionsmonster / Depressionsgruppe</li>
           <li>Entspannungstrainings: Progressive (Muskel) Relaxation (PR/PMR) und Autogenes Training (AT)</li>
           <li>themenoffene Gruppenpsychotherapie</li>
           <li>Informationsabende für Betroffene und Angehörige</li>
-      </ul>
+        </ul>
       </div>
-      <p>Ausführliche Informationen zu den einzelnen Gruppenangeboten (Zielgruppe, Inhalt, Umfang und Gruppengröße) sowie zu den Kosten und zur Anmeldung können Sie diesem <a href="../pdf/Gruppentherapie-Psychotherapie-Tekath.pdf" download>Informationsblatt</a> entnehmen.</p>
+      <p>Ausführliche Informationen zu den einzelnen Gruppenangeboten (Zielgruppe, Inhalt, Umfang und Gruppengröße) sowie zu den Kosten und zur Anmeldung können Sie diesem <a href="../pdf/Gruppentherapie-Psychotherapie-Tekath.pdf" download>Informationsblatt</a>        entnehmen.</p>
 
-  
 
-</div>
- 
-</div>
-  
-    
+
+    </div>
+
+  </div>
+
+
 
 </body>
+
 </html>

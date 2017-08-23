@@ -1,11 +1,10 @@
-
 function closeMenu() {
-    document.getElementById("mainNav").className = "closed";
+  document.getElementById("mobileNav").className = "closed";
 }
 
 function openMenu() {
-    document.getElementById("mainNav").className = "open";
-    document.getElementById("mainNav").style.zIndex = "10";
+  document.getElementById("mobileNav").className = "open";
+  document.getElementById("mobileNav").style.zIndex = "10";
 }
 
 //Email Adress Anti-Spam var

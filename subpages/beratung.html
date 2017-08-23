@@ -40,43 +40,33 @@
 <body>
   <div style="text-align: center">
       <div class="upper-background">
-  <a href="#" class="menu-btn" onclick="toggleMenu();" ><i class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></i></a></div>
+  <a href="#" class="menu-btn" onclick="openMenu();" ><i class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></i></a></div>
   <header>
     <a href="../index.html"> <img class="logoscale" src="../img/logo.svg" alt="Logo Psychotherapie Tekath" /></a>
   </header>
-  <nav id="mainNav" class="closed" role="navigation">
+  <nav id="mainNav" class="open" role="navigation">
       <ul>
         <li><a href="../index.html"> Home</a></li>
-        <li><a href="#"> Therapeutin</a>
-          <ul class="sub-menu">
-            <li><a href="therapeutin.html"> Therapeutin</a></li>
-            <li><a href="leitwerte.html"> Leitwerte</a></li>
-            <li><a href="co.html"> Co-Therapeut</a></li>
-          </ul>
+        <li><a href="therapeutin.html"> Therapeutin</a>
+          
         </li>
-        <li><a href="#"> Psychotherapie</a>
-          <ul class="sub-menu">
-            <li><a href="psychotherapie.html"> Psychotherapie</a></li>
-            <li><a href="kosten.html"> Kostenübernahme</a></li>
-          </ul>
+        <li><a href="psychotherapie.html"> Psychotherapie</a>
+          
         </li>
-        <li><a href="#" style="color: #FFFCB0"> Beratung</a>
+        <li><a href="#" "closeMenu();" style="color: #FFFCB0"> Beratung</a>
           <ul class="sub-menu">
-            <li><a href="beratung.html" style="color: #FFFCB0"> Beratung</a></li>
+            <li><a href="#" "closeMenu();" style="color: #FFFCB0"> Beratung</a></li>
             <li><a href="coaching.html"> Coaching</a></li>
             <li><a href="paarberatung.html"> Paarberatung</a></li>
             <li><a href="honorar.html"> Honorar</a></li>
           </ul>
         </li>
         <li><a href="gruppentherapie.html"> Gruppentherapie</a></li>
-        <li><a href="#"> Kontakt</a>
-          <ul class="sub-menu">
-            <li><a href="kontakt.html"> Kontakt</a></li>
-            <li><a href="impressum.html"> Impressum</a></li>
-          </ul>
+        <li><a href="kontakt.html"> Kontakt</a>
+         
         </li>
       </ul>
-      <a id="close" onclick="toggleMenu();">X</a>
+      <a id="close" onclick="closeMenu();">X</a>
     </nav>     
       
   <div class="contentdiv">

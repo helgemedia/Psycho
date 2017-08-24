@@ -296,9 +296,9 @@ summary {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   text-align: left;
-  padding: 5% 10%;
+  padding: 5% 10% 5% 20%;
   position: absolute;
-  left: 0%;
+  right: 2%;
   width: 100%;
   min-height: 100%;
   transition: top .15s ease-in-out, opacity .15s ease-in-out;
@@ -309,7 +309,7 @@ summary {
   border: 2px solid #fff;
   position: absolute;
   top: 15px;
-  right: 7%;
+  right: 8%;
   background-color: #BFCFED;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;

@@ -268,7 +268,7 @@ summary {
   color: #FFFCB0;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1030px) {
   .menu-btn {
     display: none;
   }
@@ -372,7 +372,7 @@ summary {
   display: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1030px) {
   #mainNav {
     display: inline-block;
     text-align: center;

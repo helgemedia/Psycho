@@ -46,12 +46,19 @@ body {
 
 @media screen and (min-width: 640px) {
   body {
-    background: url(../img/background/sonne-hl.svg) no-repeat left 67px, url(../img/background/sonne-hr.svg) no-repeat right 157px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
+    background: url(../img/background/sonne-hl.svg) no-repeat left 69px, url(../img/background/sonne-hr.svg) no-repeat right 159px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
     background-size: 15%;
   }
 }
 
 @media screen and (min-width: 960px) {
+  body {
+    background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 159px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
+    background-size: 12%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
   body {
     background: url(../img/background/sonne-hl.svg) no-repeat left top, url(../img/background/sonne-hr.svg) no-repeat right 90px, url(../img/background/sonne-hl.svg) no-repeat left 600px, url(../img/background/sonne-hr.svg) no-repeat right 600px;
     background-size: 12%;
@@ -268,7 +275,7 @@ summary {
   color: #FFFCB0;
 }
 
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 1100px) {
   .menu-btn {
     display: none;
   }
@@ -372,7 +379,7 @@ summary {
   display: none;
 }
 
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 1100px) {
   #mainNav {
     display: inline-block;
     text-align: center;
